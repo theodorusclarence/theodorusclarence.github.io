@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+/* variable */
+/* $green: #0f9;
+$white: #fff; */
+
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    color: #444;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    outline: 3px solid #fff;
+    /* outline-offset: 0.25em; */
+    text-transform: lowercase;
+    display: inline-block;
+    color: #0f9;
+    padding: 0.25em;
+    margin: 0.25em 0 0.25em 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+
+p span {
+    color: #0f9;
+}
+
+.hero {
+    background-image: url(https://source.unsplash.com/_LuLiJc1cdo/1600x900/);
+    background-color: #444;
+    background-blend-mode: multiply;
+    height: 100vh;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales {
+    padding: 5vh 0;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 576px) {
+    .sales {
+        flex-direction: column;
+    }
+
+    .sales-point {
+        margin: 10vw;
+    }
+}
+
+.sales-point {
+    flex-basis: 30%;
+}

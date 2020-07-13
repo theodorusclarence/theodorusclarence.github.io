@@ -2,55 +2,231 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clarence</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="css/cv-style.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a806f256d9.js" crossorigin="anonymous"></script>
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Clarence's Website</title>
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h3><a href="">clarence.</a></h3>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="cv.html">CV</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="/cv.html"">CV</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="hero">
-        <div>
-            <h1>Hi! This page is under development right now.</h1>
+    </header> -->
+
+    <div class=" hero">
+        <h1 class="hero__title">Hello.</h1>
+        <h1 class="hero__title"><span>I'm Clarence</span></h1>
+        <div class="btn-group">
+            <a class="btn btn-primary" href="#work">See My Work</a>
+
+            <a class="btn btn-outline" href="cv.html">
+                See My CV
+            </a>
         </div>
     </div>
 
-    <!-- <div class="sales">
-        <div class="sales-point">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus amet consequuntur sint laboriosam! Nemo,
-                blanditiis.
-            </p>
+    <div class="container">
+        <section class="about">
+            <img src="img/me.png" alt="Photo of Me" class="about__img">
+            <h2 class="about__title">Theodorus<br>Clarence</h2>
+            <h3 class="about__subtitle">Informatics Student</h3>
+            <p class="about__text">I'm a fast learner and hardworking student at Institut Teknologi
+                Sepuluh Nopember. I
+                always try to be honest and be kind to others. </p>
+            <p class="about__text">I aim to thrive at what I can do and always looking for something
+                new to learn and to
+                improve. Currently, I am really interested in web development</p>
+        </section>
+    </div>
+
+    <section class="work" id="work">
+        <h1>My Work</h1>
+        <div class="work-items">
+            <figure class="work-item featured">
+                <img src="img/gemilang.png" alt="Photo of Gemilangme">
+                <figcaption>
+                    <h2 class="work-title">gemilangme</h2>
+                    <div class="">
+                        <p class="work-desc">This project was made by using wordpress.</p>
+                        <a href="#" class="work-link">more info ></a>
+                    </div>
+
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                                <g transform="translate(-15 -15)">
+                                    <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                        35.8,16.5 37,17.7 	" />
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="portfolio-header header-one">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Gemilangme</h2>
+                                <p class="portfolio-subtitle">This project was made by using wordpress for client.</p>
+                            </div>
+                        </div>
+                        <!--/portfolio-header-->
+                        <div class="portfolio-content">
+                            <img src="img/gemilang-page.png" alt="Gemilangme Page">
+                        </div>
+                    </div>
+                    <!-- /modal -->
+
+                </figcaption>
+            </figure>
+
+            <figure class="work-item wide">
+                <img src="img/axioma.png" alt="Photo of Axioma">
+                <figcaption>
+                    <h2 class="work-title">axiom</h2>
+                    <div class="">
+                        <p class="work-desc">This project was made by using bootstrap.</p>
+                        <a href="#" class="work-link">more info ></a>
+                    </div>
+
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                                <g transform="translate(-15 -15)">
+                                    <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                        35.8,16.5 37,17.7 	" />
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="portfolio-header header-one">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Axioma</h2>
+                                <p class="portfolio-subtitle">This project was made by using bootstrap for ITS Youth
+                                    Technopreneur 2020.</p>
+                            </div>
+                        </div>
+                        <!--/portfolio-header-->
+                        <div class="portfolio-content">
+                            <img src="img/axiom-page.png" alt="Axiom Page">
+                        </div>
+                    </div>
+                    <!-- /modal -->
+                </figcaption>
+            </figure>
+
+            <figure class="work-item">
+                <img src="img/personal.png" alt="Photo of Personal Website">
+                <figcaption>
+                    <h2 class="work-title">Personal Page</h2>
+                    <div class="">
+                        <p class="work-desc">This project was made by using HTML, CSS, JavaScript.
+                        </p>
+                        <a href="#" class="work-link">more info ></a>
+                    </div>
+
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                                <g transform="translate(-15 -15)">
+                                    <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                        35.8,16.5 37,17.7 	" />
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="portfolio-header header-one">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Personal Page</h2>
+                                <p class="portfolio-subtitle">This project was made by using HTML, CSS, JavaScript.</p>
+                            </div>
+                        </div>
+                        <!--/portfolio-header-->
+                        <div class="portfolio-content">
+                            <img src="img/personal-page.png" alt="Personal Page">
+                        </div>
+                    </div>
+                    <!-- /modal -->
+
+                </figcaption>
+            </figure>
+
+            <figure class="work-item">
+                <img src="img/chat-app.png" alt="Photo of Chat App">
+                <figcaption>
+                    <h2 class="work-title">Chat App</h2>
+                    <div class="">
+                        <p class="work-desc">This project was made by using Node JS and Socket.io.
+                        </p>
+                        <a href="#" class="work-link">more info ></a>
+                    </div>
+
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                                <g transform="translate(-15 -15)">
+                                    <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                        35.8,16.5 37,17.7 	" />
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="portfolio-header header-one">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Chat App</h2>
+                                <p class="portfolio-subtitle">This project was made by using Node JS and Socket.io</p>
+                            </div>
+                        </div>
+                        <!--/portfolio-header-->
+                        <div class="portfolio-content">
+                            <img src="img/node-page.png" alt="Node Page">
+                        </div>
+                    </div>
+                    <!-- /modal -->
+                </figcaption>
+            </figure>
         </div>
-        <div class="sales-point">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus amet consequuntur sint laboriosam! Nemo,
-                blanditiis.
-            </p>
+    </section>
+
+    <div class="container">
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <form action="mailto:theodorusclarence@gmail.com" method="post" enctype="text/plain">
+                <label for="" class="name">Name:
+                    <input type="text" id="name" name="name">
+                </label>
+                <label for="" class="email">Email:
+                    <input type="text" id="email" name="email">
+                </label>
+                <label for="" class="message">Message:
+                    <textarea name="message" id="message"></textarea>
+                </label>
+                <input class="btn btn-primary" type="submit" value="SEND">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Follow me on social medias</p>
+        <div class="social-logos">
+            <a href="https://www.linkedin.com/in/theodorus-clarence-2433aa1b0/" class="social-logo" target="_blank"><i
+                    class="fab fa-linkedin fa-4x"></i></a>
+            <a href="https://github.com/theodorusclarence/" class="social-logo" target="_blank"><i
+                    class="fab fa-github-square fa-4x"></i></a>
+            <a href="https://www.instagram.com/theodorusclarence/" class="social-logo" target="_blank"><i
+                    class="fab fa-instagram-square fa-4x"></i></a>
         </div>
-        <div class="sales-point">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus amet consequuntur sint laboriosam! Nemo,
-                blanditiis.
-            </p>
-        </div>
-    </div> -->
+        <p>©Theodorus Clarence 2020</p>
+    </footer>
+
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

@@ -429,6 +429,14 @@ img {
 .hero h1 span {
     color: #00ffdf;
 }
+
+.down-btn {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    bottom: 1em;
+    left: 50%;
+}
 @media (min-width: 38em) {
     .hero {
         padding-left: 5em;

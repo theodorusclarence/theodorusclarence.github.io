@@ -416,7 +416,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 12em;
+    padding-bottom: 15em;
     padding-left: 2em;
 }
 .hero h1 {
